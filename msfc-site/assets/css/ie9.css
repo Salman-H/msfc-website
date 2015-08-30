@@ -1,0 +1,11 @@
+/*
+	MSFC Website
+	Salman Hashmi
+*/
+
+/* Signup Form */
+
+	#signup-form > * {
+		display: inline-block;
+		vertical-align: top;
+	}
