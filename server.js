@@ -48,7 +48,7 @@ app.get('/send',function(req,res){
 /*--------------------Routing Over----------------------------*/
 
 //app.listen(port, function());
-app.listen(80,80,80,80,80,80,80,80,'https://sleepy-ocean-5312.herokuapp.com');
+app.listen(80,80,80,80,80,80,80,80,'www.sleepy-ocean-5312.herokuapp.com');
 //app.listen(8080, '45.55.217.187');
 //app.listen(port, function(){
 //    console.log("Express Started on Port 8080");
