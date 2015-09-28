@@ -954,7 +954,7 @@
 		background-color: #f73c3f;
 		border-radius: 6px;
 		border: 0;
-		color: #ffffff !important;
+		color: #ffffff;   /* !important */
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
@@ -971,7 +971,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #1fcaa7;
+			background-color: #ffffff;
+            color: #f73c3f;
 		}
 
 		input[type="submit"]:active,
@@ -979,7 +980,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #199e83;
+			background-color: #f73c3f; /* #199e83; */
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
