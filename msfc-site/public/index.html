@@ -24,16 +24,10 @@
 			</header>
 
 		<!-- Signup Form -->
-<!--
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
--->
         
         <form method="post" name="subForm" action="#" onsubmit="return validateForm()" id="signup-form">
 				<input type="email" name="email" id="email" placeholder="Email Address" required />
-				<input type="submit" id="send_email" value="Sign Up" />
+				<input type="submit" id="send_email" value="Keep Me Posted!" />
 			</form>
 
 		<!-- Footer -->
@@ -60,42 +54,27 @@
       <script type="text/javascript">
 			//Email logic
 				
-				var name;
-				var subject;
-				var text;
+				var dest;
 				
 				function validateForm() {
-//					var nameForm = document.forms["subForm"]["name"].value;
 					var emailForm = document.forms["subForm"]["email"].value;
-//					var textForm = document.forms["subForm"]["message"].value;
-//    				if (nameForm == ""){
-//    					return false;
-//                        
-//    				}    				
+   				
     				if (emailForm == ""){ 
     					return false;
     				}
-//    				if (textForm == ""){
-//        				return false;
-//    				}
+
     				return true;
 				}
                 
-                
-
 				$("#send_email").click(function(){
 
 					if(validateForm()){
-                        
-						name = $("#name").val();      
+                          
 						dest = $("#email").val();
-//						text = $("#message").val();
 
 						$.get("http://localhost:8080/send", {
 //                        $.get("http://45.55.217.187:8080/send", {
-							name:name, 
 							dest:dest 
-//							text:text
 						});
 
 						document.getElementById("send_email").value="Thank You!";

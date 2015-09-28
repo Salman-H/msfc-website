@@ -34,11 +34,11 @@ app.use(express.static(__dirname + '/public'));
 app.get('/send',function(req,res){
 	var mailOptions={
 
-    	from: '' + req.query.name + '<dan.crisan@live.com>',
+    	from: 'Flight Club Registrations',
         to : "dan.crisan@live.com",
 		subject : "My email is " + req.query.dest + " and...",
 		    // plaintext body
-    	text : 'You got a new registration!'
+    	text : '...I just signed up!'
     	//text: 'Hello to myself!'
 		//text : req.query.text
 	}
