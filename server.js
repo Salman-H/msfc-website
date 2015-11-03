@@ -35,8 +35,8 @@ app.get('/send',function(req,res){
 	var mailOptions={
 
     	from: 'Flight Club Registrations',
-//        to : "mcgillflyingclub@gmail.com",
-        to : "dan.crisan@mail.mcgill.ca",
+        to : "mcgillflyingclub@gmail.com",
+//        to : "dan.crisan@mail.mcgill.ca",
 		subject : "My email is " + req.query.dest + " and...",
 		    // plaintext body
     	text : '...I just signed up!'
