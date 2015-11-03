@@ -19,7 +19,7 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 	service: "Gmail",
 	auth: {
 		user: "imagineany@gmail.com",
-		pass: "Hunedoara04"
+		pass: "McGill2016"
 	}
 });
 /*------------------SMTP Over-----------------------------*/
@@ -35,7 +35,8 @@ app.get('/send',function(req,res){
 	var mailOptions={
 
     	from: 'Flight Club Registrations',
-        to : "mcgillflyingclub@gmail.com",
+//        to : "mcgillflyingclub@gmail.com",
+        to : "dan.crisan@mail.mcgill.ca",
 		subject : "My email is " + req.query.dest + " and...",
 		    // plaintext body
     	text : '...I just signed up!'
